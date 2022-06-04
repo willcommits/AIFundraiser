@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="me.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Robot<span>ics</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="ideas.html">Ideas</a></li>
+                    <li><a href="Articles.html">Articles</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li class="go-premium-cta"><a href="fundus.html">Fund Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="detailsaboutme">
+        <h1>Prosper Will Mambambo</h1>
+        <h2>Front-end Web Developer</h2>
+        <div class="image">
+            <img src="me.png" alt="mypicture">
+        </div>
+    </div>
+<p>My name is Prosper Mambambo. I'm a third year Information Systems and Computer Science Major at the University Of Cape Town. I enjoy coding and making new stuff.
+    I want to keep growing as a developer by creating new and fun stuff every day. this is one of my websites. it's not perfect but a start
+    to my journey of becoming a developer and contributing to the tech world.
+</p>
+<a href="#" class="btn">Get In Touch</a>
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

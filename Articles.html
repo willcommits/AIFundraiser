@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="art.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Robot<span>ics</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="ideas.html">Ideas</a></li>
+                    <li><a href="Articles.html">Articles</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li class="go-premium-cta"><a href="fundus.html">Fund Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="contain">
+        <div class="rw">
+            <div class="heading-section">
+                <h1>Our <span>Blog</span> </h1>
+                <p>Robots in medicine help by relieving medical personnel from routine tasks, that take their time away from more pressing responsibilities, and by making medical procedures safer and less costly for patients. They can also perform accurate surgery in tiny places and transport dangerous substances.</p>
+            </div>
+            <div class="content-section">
+                <div class="card">
+                    <img src="image1.jpg" alt="">
+                    <h4>Medical Application</h4>
+                    <p>Robots are used to help surgeons control movement and to make more targeted incisions — especially useful when working on delicate procedures such as cardiac or neurosurgery. Other robots can make less-invasive procedures possible. Some examples include NeuroArm, used to perform complicated neurosurgery; CyberKnife, used to delivery targeted radiotherapy; and HeartLander, used to perform heart surgery without having to crack open a patient’s chest. Many, many more surgical robots have been designed for a variety of treatments.                    </p>
+
+                </div>
+                <div class="card">
+                    <img src="imag2.jpg" alt="">
+                    <h4>Surgical Implementation</h4>
+                    <p>Robotic surgery, or robot-assisted surgery, allows doctors to perform many types of complex procedures with more precision, flexibility and control than is possible with conventional techniques. Robotic surgery is usually associated with minimally invasive surgery — procedures performed through tiny incisions. It is also sometimes used in certain traditional open surgical procedures.</p>
+
+                </div>
+                <div class="card">
+                    <img src="image3.jpg" alt="">
+                    <h4>Diagnosing Diseases through Robots</h4>
+                    <p>Application of nano robots in cancer treatment: The patient will have more chances for treating from cancer if it diagnosed earlier. Nanorobots with chemical biosensor (nanosensor) are used for detecting the tumours cells in early stage of cancer development. This nanosensor will sense the presence of malignant cells in the body.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+    
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+    
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    
+    
+    
+    </script>  
+</body>
+</html>
